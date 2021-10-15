@@ -1,0 +1,125 @@
+/* Imports */
+
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Inter:wght@300;500;700&display=swap");
+
+/* Variables */
+
+:root {
+  --principal: #0b0c0d;
+  --text-primary: #fff;
+  --font-regular: "Inter", sans-serif;
+  --font-title: "Bowlby One SC", cursive;
+}
+
+/* Normalize */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--font-regular);
+  color: var(--text-primary);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+/* HELPERS */
+
+.flex-row {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+/* HEADER & NAVBAR*/
+header {
+  background-color: var(--principal);
+}
+
+header .navegacion {
+  min-height: 10vh;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navegacion .menu {
+  flex-grow: 0.2;
+  justify-content: space-between;
+}
+
+.navegacion .menu li a {
+  font-size: 1.6em;
+}
+
+/* PRESENTATION */
+
+#presentation {
+  background-color: var(--principal);
+}
+
+#presentation article {
+  gap: 2rem;
+  align-items: center;
+}
+
+#presentation article picture {
+  width: 50%;
+}
+
+#presentation article picture img {
+  width: 100%;
+}
+
+#presentation article section {
+  width: 50%;
+}
+
+#presentation article section p {
+  font-size: 3.125em;
+}
+
+#presentation article section h1 {
+  font-size: 6.75em;
+}
+
+/* FOOTER */
+
+footer {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--principal);
+}
+
+footer p {
+  text-align: center;
+  font-size: 1.2em;
+}
